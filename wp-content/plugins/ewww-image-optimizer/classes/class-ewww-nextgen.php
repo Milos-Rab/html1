@@ -372,8 +372,8 @@ if ( ! class_exists( 'EWWW_Nextgen' ) ) {
 				'ewwwnextgenscript',
 				'ewww_vars',
 				array(
-					'optimizing' => '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>",
-					'restoring'  => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>",
+					'optimizing' => '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' alt='' /></p>",
+					'restoring'  => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' alt='' /></p>",
 				)
 			);
 		}
@@ -1014,7 +1014,7 @@ if ( ! class_exists( 'EWWW_Nextgen' ) ) {
 				return;
 			}
 			?>
-			<script type="text/javascript">
+			<script >
 				jQuery(document).ready(function($){
 					$('select[name^="bulkaction"] option:last-child').after('<option value="bulk_optimize"><?php esc_html_e( 'Bulk Optimize', 'ewww-image-optimizer' ); ?></option>');
 				});

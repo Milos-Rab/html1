@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg navbarMain">
           <div class="container">
             <a class="navbar-brand navbarLogo" href="<?php echo get_home_url() ?>">
-              <img src="<?php bloginfo('template_url');?>/img/logo.png">
+              <img src="<?php bloginfo('template_url');?>/img/logo.png" alt="">
             </a>
             
             <div id="menu-humburger">

@@ -1510,7 +1510,7 @@ class Limit_Login_Attempts
                     </ul>
                 </div>
 			</div>
-            <script type="text/javascript">
+            <script >
                 (function($){
 
                     $(document).ready(function(){

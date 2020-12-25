@@ -134,7 +134,7 @@ do_action('acf/render_field_group_settings', $field_group);
 <div class="acf-hidden">
 	<input type="hidden" name="acf_field_group[key]" value="<?php echo $field_group['key']; ?>" />
 </div>
-<script type="text/javascript">
+<script >
 if( typeof acf !== 'undefined' ) {
 		
 	acf.postbox.render({

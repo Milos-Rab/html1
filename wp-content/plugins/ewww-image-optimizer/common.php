@@ -2755,8 +2755,8 @@ function ewww_image_optimizer_media_scripts( $hook ) {
 			'ewwwmediascript',
 			'ewww_vars',
 			array(
-				'optimizing' => '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>",
-				'restoring'  => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>",
+				'optimizing' => '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image'  alt="" /></p>",
+				'restoring'  => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image'  alt="" /></p>",
 			)
 		);
 	}
@@ -11514,12 +11514,12 @@ AddType image/webp .webp</pre>
 	</form>
 	<?php } elseif ( ewww_image_optimizer_get_option( 'ewww_image_optimizer_webp_for_cdn' ) && ! ewww_image_optimizer_ce_webp_enabled() ) { ?>
 	<noscript data-img='<?php echo esc_url( $test_png_image ); ?>' data-webp='<?php echo esc_url( $test_webp_image ); ?>' data-style='padding: 0 0 10px 0;' class='ewww_webp'>
-		<img src='<?php echo esc_url( $test_png_image ); ?>' style='float: right; padding: 0 0 10px 10px;'>
+		<img src='<?php echo esc_url( $test_png_image ); ?>' style='float: right; padding: 0 0 10px 10px;' alt="">
 	</noscript>
 	<?php } elseif ( ewww_image_optimizer_get_option( 'ewww_image_optimizer_picture_webp' ) && ! ewww_image_optimizer_ce_webp_enabled() ) { ?>
 		<picture>
 			<source srcset='<?php echo esc_url( $test_webp_image ); ?>' type='image/webp'>
-			<img src='<?php echo esc_url( $test_webp_image ); ?>' style='padding: 0 0 10px 0;'>
+			<img src='<?php echo esc_url( $test_webp_image ); ?>' style='padding: 0 0 10px 0;' alt="">
 		</picture>
 	<?php } elseif ( $cf_host && ewww_image_optimizer_get_option( 'ewww_image_optimizer_webp' ) ) { ?>
 		<p><?php esc_html_e( 'Your site is using Cloudflare, please use JS WebP or <picture> WebP rewriting.', 'ewww-image-optimizer' ); ?></p>
@@ -11534,7 +11534,7 @@ AddType image/webp .webp</pre>
 		$eio_alt_webp->inline_script();
 	}
 
-	echo '<hr style="clear:both;"><div id="ewwwio-banner"><img src="' . esc_url( plugins_url( '/images/ewwwio-logo.png', __FILE__ ) ) . '">' .
+	echo '<hr style="clear:both;"><div id="ewwwio-banner"><img src="' . esc_url( plugins_url( '/images/ewwwio-logo.png', __FILE__ ) ) . '" alt="">' .
 		'<p>' . esc_html__( 'Get performance tips, exclusive discounts, and the latest news when you signup for our newsletter!', 'ewww-image-optimizer' ) . '</p>' .
 		'<a href="https://eepurl.com/gKyU6L?TB_iframe=true&width=600&height=610" class="thickbox button-secondary">' . esc_html__( 'Subscribe now!', 'ewww-image-optimizer' ) . ' &rarr;</a></div>';
 
@@ -11570,8 +11570,8 @@ AddType image/webp .webp</pre>
 			$hs_debug = str_replace( array( "'", '<br>', '<b>', '</b>', '=>' ), array( "\'", '\n', '**', '**', '=' ), $debug_info );
 		}
 		?>
-<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
-<script type="text/javascript">
+<script >!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script >
 	window.Beacon('init', 'aa9c3d3b-d4bc-4e9b-b6cb-f11c9f69da87');
 	Beacon( 'prefill', {
 		email: '<?php echo esc_js( utf8_encode( $help_email ) ); ?>',
@@ -11767,7 +11767,7 @@ function ewww_image_optimizer_resize_detection_script() {
 			"\tmargin: -3px;\n" .
 			"}\n" .
 			"</style>\n";
-		echo '<script type="text/javascript">' . $resize_detection_script . '</script>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo '<script >' . $resize_detection_script . '</script>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
 

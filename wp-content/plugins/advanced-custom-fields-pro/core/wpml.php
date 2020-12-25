@@ -391,7 +391,7 @@ class acf_wpml_compatibility {
 	function admin_footer() {
 		
 		?>
-		<script type="text/javascript">
+		<script >
 		(function($) {
 			
 			// add filter

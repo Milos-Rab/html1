@@ -176,7 +176,7 @@ class MWP_EventListener_PublicRequest_AddConnectionKeyInfo implements Symfony_Ev
             }
         </style>
 
-        <script type="text/javascript">
+        <script >
             <?php if ($deletedKey) { ?>
             window.location.replace(<?php echo json_encode($this->context->getAdminUrl('plugins.php?worker_connections=1')); ?>);
             <?php } ?>

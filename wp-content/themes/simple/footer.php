@@ -13,7 +13,7 @@
     <!-- Footer -->
 
     <!-- Fixed header -->
-    <script type="text/javascript">
+    <script >
       $(window).scroll(function() {
       if ($(this).scrollTop() > 1){
       $('.navbarMain').addClass("sticky");
@@ -24,7 +24,7 @@
       });
       </script>
 
-      <script type="text/javascript"> 
+      <script > 
         $(document).ready(function(){
           $("#menu-main-menu").on("click","a", function (event) {
             //отменяем стандартную обработку нажатия по ссылке
@@ -41,7 +41,7 @@
           });
         });
       </script>
-      <script type="text/javascript"> 
+      <script > 
         $(document).ready(function(){
           $("#mouse").on("click","a", function (event) {
             //отменяем стандартную обработку нажатия по ссылке
@@ -58,13 +58,13 @@
           });
         });
       </script>
-      <script type="text/javascript">
+      <script >
         $('.primary-link a').on('click', function() {
             window.location = $( this ).attr('href');
         });
       </script>
 
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCkTTGPaEkHCPxiNH14iD6cJXXUfA0OeI&libraries=places&language=en"></script>
+      <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCkTTGPaEkHCPxiNH14iD6cJXXUfA0OeI&libraries=places&language=en"></script>
       <script>
         var input = document.getElementById('autocomplete');
         var autocomplete = new google.maps.places.Autocomplete(input,{types: ['geocode']});
@@ -108,7 +108,7 @@
           });
         });
       </script>
-      <script type="text/javascript">
+      <script >
         var form = $("#example-form");
         form.validate({
             errorPlacement: function errorPlacement(error, element) { element.before(error); },
@@ -152,7 +152,7 @@
       </script>
       <!-- <p>Date: <input type="text" id="datepicker"></p> -->
 
-      <script type="text/javascript">
+      <script >
       (function($) {
       function new_map( $el ) {
         // var
@@ -298,7 +298,7 @@
       </script>
       
       <!-- Map new -->
-      <script type="text/javascript">
+      <script >
         var markersData = [
             {  
                 lat: 33.7669422,     // Широта

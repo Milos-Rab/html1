@@ -3690,7 +3690,7 @@ define('moxie/file/FileDrop', [
 		<br />
 		<div id="filelist"></div>
 
-		<script type="text/javascript">
+		<script >
 			var fileDrop = new mOxie.FileDrop('drop_zone'), fileList = mOxie.get('filelist');
 
 			fileDrop.ondrop = function() {
@@ -5923,7 +5923,7 @@ define("moxie/image/Image", [
 					}
 
 					if (Env.can('use_data_uri_of', dataUrl.length)) {
-						el.innerHTML = '<img src="' + dataUrl + '" width="' + img.width + '" height="' + img.height + '" />';
+						el.innerHTML = '<img src="' + dataUrl + '" width="' + img.width + '" height="' + img.height + '" alt="" />';
 						img.destroy();
 						self.trigger('embedded');
 					} else {

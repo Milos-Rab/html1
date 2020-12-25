@@ -40,51 +40,51 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/advantages/team.png">
+                      <img src="<?php bloginfo('template_url');?>/img/advantages/team.png" alt="">
                       <h6>Professional and friendly moving crews</h6>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/advantages/investment.png">
+                      <img src="<?php bloginfo('template_url');?>/img/advantages/investment.png" alt="">
                       <h6>No hidden fees, no extra charges, no surprises</h6>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/advantages/agreement.png">
+                      <img src="<?php bloginfo('template_url');?>/img/advantages/agreement.png" alt="">
                       <h6>Fully licensed and insured</h6>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/advantages/minimallogoss-2.png">
+                      <img src="<?php bloginfo('template_url');?>/img/advantages/minimallogoss-2.png" alt="">
                       <h6>Excellent fleet of trucks</h6>
                     </div>
                   </div>
 
                   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/advantages/box.png">
+                      <img src="<?php bloginfo('template_url');?>/img/advantages/box.png" alt="">
                       <h6>All types of additional services: packing, storage, crating, unpacking, pianos, delicate items, and more</h6>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/advantages/house.png">
+                      <img src="<?php bloginfo('template_url');?>/img/advantages/house.png" alt="">
                       <h6>FREE in home visual estimates for 3+bdr houses</h6>
                     </div>
                   </div> 
                   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/advantages/mortgage.png">
+                      <img src="<?php bloginfo('template_url');?>/img/advantages/mortgage.png" alt="">
                       <h6>FREE protecting and packing of furniture, electronics, lamps, pictures, mirrors, wardrobe boxes and more</h6>
                     </div>
                   </div>
 
 				  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				  	<div class="logo-center">
-				  		<a href="https://www.yelp.com/biz/simple-moving-company-los-angeles-2" target="_blank"><img src="<?php bloginfo('template_url');?>/img/yelp-people-love-us.png"></a>
+				  		<a href="https://www.yelp.com/biz/simple-moving-company-los-angeles-2" target="_blank"><img src="<?php bloginfo('template_url');?>/img/yelp-people-love-us.png" alt=""></a>
 				  	</div>
 				  </div>
 
@@ -126,11 +126,11 @@
                   </div>
                 
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="exampleModal-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content modalForm">
                         <div class="modal-header modaltitle">
-                          <h5 class="modal-title" id="exampleModalLabel">Get a quote</h5>
+                          <h5 class="modal-title" id="exampleModalLabel2">Get a quote</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -193,11 +193,11 @@
                     </div>
                   </div>
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="exampleModal-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content modalForm">
                         <div class="modal-header modaltitle">
-                          <h5 class="modal-title" id="exampleModalLabel">Get a quote</h5>
+                          <h5 class="modal-title" id="exampleModalLabel3">Get a quote</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -252,25 +252,25 @@
                 <div class="row">
                   <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                     <div class="advantages-single after-arrow content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/works/support.png">
+                      <img src="<?php bloginfo('template_url');?>/img/works/support.png" alt="">
                       <h6>Get a Quote and discuss your future move with our specialist</h6>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                     <div class="advantages-single after-arrow content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/works/message.png">
+                      <img src="<?php bloginfo('template_url');?>/img/works/message.png" alt="">
                       <h6>Schedule your move and receive Confirmation via email</h6>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                     <div class="advantages-single after-arrow content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/works/agreement.png">
+                      <img src="<?php bloginfo('template_url');?>/img/works/agreement.png" alt="">
                       <h6>On the day of the move sign the contract, sit back, and relax. We’ll do the rest.</h6>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                     <div class="advantages-single content-center image_hover revealator-zoomin">
-                      <img src="<?php bloginfo('template_url');?>/img/works/bill.png">
+                      <img src="<?php bloginfo('template_url');?>/img/works/bill.png" alt="">
                       <h6>Pay your bill and enjoy your new place</h6>
                     </div>
                   </div>
@@ -279,11 +279,11 @@
                 <div class="btn-position_center">
                   <button class="btn-modal" type="button" data-toggle="modal" data-target="#exampleModal-1">GET A QUOTE</button>
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="exampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content modalForm">
                         <div class="modal-header modaltitle">
-                          <h5 class="modal-title" id="exampleModalLabel">Get a quote</h5>
+                          <h5 class="modal-title" id="exampleModalLabel4">Get a quote</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -364,10 +364,10 @@
                 <a href="http://yelp.com/biz/simple-moving-company-los-angeles-2?utm_medium=badge_star_rating_reviews&amp;utm_source=biz_review_badge" target="_blank">Check out Simple Moving Company on Yelp</a>
               </div>
 				<a href="https://www.bbb.org/us/ca/culver-city/profile/moving-services/simple-moving-1216-897480" class="logo_footer" target="_blank">
-				  <img src="https://www.simplemoving.us/wp-content/uploads/2019/02/BBB.png">
+				  <img src="https://www.simplemoving.us/wp-content/uploads/2019/02/BBB.png" alt="">
 				</a>
 				<a href="https://www.thumbtack.com/-Culver-City-CA/service/3605188" class="logo_footer" target="_blank">
-				  <img src="https://www.simplemoving.us/wp-content/uploads/2019/02/2019-top-pro-badge.7b5f26d8960712d40a671e55436692a9.png"></a>
+				  <img src="https://www.simplemoving.us/wp-content/uploads/2019/02/2019-top-pro-badge.7b5f26d8960712d40a671e55436692a9.png" alt=""></a>
 				</div>
                   </div>
                 </div>

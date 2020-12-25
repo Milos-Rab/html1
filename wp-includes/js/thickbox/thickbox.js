@@ -66,7 +66,7 @@ function tb_show(caption, url, imageGroup) {//function called when the user clic
 		}
 
 		if(caption===null){caption="";}
-		jQuery("body").append("<div id='TB_load'><img src='"+imgLoader.src+"' width='208' /></div>");//add loader to the page
+		jQuery("body").append("<div id='TB_load'><img src='"+imgLoader.src+"' width='208' alt='' /></div>");//add loader to the page
 		jQuery('#TB_load').show();//show loader
 
 		var baseURL;

@@ -317,7 +317,7 @@ final class Themes_Tab {
 
 				<div class="theme godaddy" tabindex="0" aria-describedby="<?php echo esc_attr( $slug ); ?>-action <?php echo esc_attr( $slug ); ?>-name" data-slug="<?php echo esc_attr( $slug ); ?>" data-demo-url="<?php echo esc_url( $url ); ?>">
 					<div class="theme-screenshot">
-						<img src="<?php echo esc_url( $screenshot ); ?>">
+						<img alt="" src="<?php echo esc_url( $screenshot ); ?>">
 					</div>
 					<span class="more-details"><?php esc_html_e( 'View Demo', 'gd-system-plugin' ); ?></span>
 					<div class="theme-author">

@@ -91,7 +91,7 @@ class MWP_EventListener_PublicRequest_BrandContactSupport implements Symfony_Eve
     {
         ob_start()
         ?>
-        <script type="text/javascript">
+        <script >
             jQuery(document).ready(function ($) {
                 var $dialog = $('#mwp_support_dialog');
                 var $form = $('#mwp_support_form');

@@ -229,7 +229,7 @@ final class WooCommerce_Product_Updates {
 			case 'plugins.php':
 
 				?>
-				<script type="text/javascript">
+				<script >
 				jQuery( document ).ready( function() {
 				<?php foreach ( $installed_extensions as $extension_path ) : ?>
 					var html = jQuery( 'tr.plugin-update-tr[data-plugin="<?php echo esc_attr( $extension_path ); ?>"]' ).html();

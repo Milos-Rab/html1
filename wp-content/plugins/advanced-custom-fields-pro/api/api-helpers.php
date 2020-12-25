@@ -2398,7 +2398,7 @@ function acf_debug() {
 	
 	
 	// start script
-	$o .= '<script type="text/javascript">' . $nl;
+	$o .= '<script >' . $nl;
 	
 	$o .= 'console.log("' . $s . '"';
 	

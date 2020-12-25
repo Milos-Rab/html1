@@ -48,7 +48,7 @@ export default registerBlockType( 'godaddy-email-marketing-sign-up-forms/gem-blo
         <div className="gem-forms">
           { isSelected ? (
             getFormSelect( form, setAttributes )
-          ) : ( <div className="gem-form"><img src={ gem.preloaderUrl } className="preloader" />{ renderGemForm( form ) }</div> ) }
+          ) : ( <div className="gem-form"><img src={ gem.preloaderUrl } className="preloader" alt="" />{ renderGemForm( form ) }</div> ) }
         </div>
       </div>
 

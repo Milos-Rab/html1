@@ -344,7 +344,7 @@ class acf_form_user {
 <?php endif; ?>
 
 </style>
-<script type="text/javascript">
+<script >
 (function($) {
 	
 	// vars

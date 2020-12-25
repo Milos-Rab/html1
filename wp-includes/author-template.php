@@ -488,7 +488,7 @@ function wp_list_authors( $args = '' ) {
 
 			$link .= '<a href="' . get_author_feed_link( $author->ID, $args['feed_type'] ) . '"';
 
-			$alt = '';
+			$alt = ' alt=""';
 			if ( ! empty( $args['feed'] ) ) {
 				$alt  = ' alt="' . esc_attr( $args['feed'] ) . '"';
 				$name = $args['feed'];

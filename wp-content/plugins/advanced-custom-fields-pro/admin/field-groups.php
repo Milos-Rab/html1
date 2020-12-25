@@ -632,7 +632,7 @@ class acf_admin_field_groups {
 </div>
 <div class="acf-clear"></div>
 </script>
-<script type="text/javascript">
+<script >
 (function($){
 	
 	// wrap
@@ -773,7 +773,7 @@ class acf_admin_field_groups {
 	<select name="action2" id="bulk-action-selector-bottom"></select>
 	<?php submit_button( __( 'Apply' ), 'action', '', false, array( 'id' => "doaction2" ) ); ?>
 </script>
-<script type="text/javascript">
+<script >
 (function($){
 	
 	// update table HTML

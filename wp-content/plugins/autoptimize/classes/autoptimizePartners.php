@@ -74,7 +74,7 @@ class autoptimizePartners
 
                     if ( $enclosure && ( false !== strpos( $enclosure->get_type(), 'image' ) ) ) {
                         $img_url = esc_url( $enclosure->get_link() );
-                        $output .= '<div class="itemImage"><a href="' . $item_url . '" target="_blank"><img src="' . $img_url . '"></a></div>';
+                        $output .= '<div class="itemImage"><a href="' . $item_url . '" target="_blank"><img src="' . $img_url . '" alt=""></a></div>';
                     }
 
                     $output .= '<div class="itemDescription">' . wp_kses_post( $item->get_description() ) . '</div>';

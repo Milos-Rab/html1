@@ -94,11 +94,11 @@
                   ?>
 
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content modalForm">
                         <div class="modal-header modaltitle">
-                          <h5 class="modal-title" id="exampleModalLabel">Get a quote</h5>
+                          <h5 class="modal-title" id="exampleModalLabel1">Get a quote</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>

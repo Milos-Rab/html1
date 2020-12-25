@@ -148,7 +148,7 @@ $rule_operators = apply_filters( 'acf/location/rule_operators', array(
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
+<script >
 if( typeof acf !== 'undefined' ) {
 		
 	acf.postbox.render({

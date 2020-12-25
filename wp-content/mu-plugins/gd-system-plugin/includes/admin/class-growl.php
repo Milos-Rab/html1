@@ -95,7 +95,7 @@ final class Growl {
 	public function display() {
 
 		?>
-		<script type="text/javascript">
+		<script >
 			jQuery( document ).ready( function( $ ) {
 				<?php foreach ( self::$messages as $message ) : ?>
 					$.gritter.add( {

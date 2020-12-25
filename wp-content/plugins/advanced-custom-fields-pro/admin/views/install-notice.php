@@ -44,7 +44,7 @@ if( !acf_get_setting('pro') ) {
 			<p><a id="acf-notice-action" href="<?php echo $button_url; ?>" class="button button-primary"><?php echo $button_text; ?></a></p>
 			
 		<?php if( $confirm ): ?>
-			<script type="text/javascript">
+			<script >
 			(function($) {
 				
 				$("#acf-notice-action").on("click", function(){

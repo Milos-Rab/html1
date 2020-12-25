@@ -81,7 +81,7 @@ function pfcf_settings_page() {
 ?>
 <div class="popup-cf7-wrap">
 <h2>Popup Settings</h2>
-<script type="text/javascript">
+<script >
 jQuery(document).ready(function($){
 	$('#upload-btn').click(function(e) {
 		e.preventDefault();

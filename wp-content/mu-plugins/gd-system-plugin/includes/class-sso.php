@@ -221,7 +221,7 @@ final class SSO {
 		}
 
 		?>
-		<script type="text/javascript">
+		<script >
 		( function() {
 			try {
 				var i, links = document.getElementsByTagName( 'a' );

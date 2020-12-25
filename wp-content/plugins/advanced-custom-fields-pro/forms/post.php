@@ -331,7 +331,7 @@ class acf_form_post {
 		}
 	
 	?>
-<script type="text/javascript">
+<script >
 if( typeof acf !== 'undefined' ) {
 		
 	acf.postbox.render(<?php echo json_encode($o); ?>);	

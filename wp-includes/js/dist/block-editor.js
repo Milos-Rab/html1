@@ -31097,7 +31097,7 @@ function getPasteEventData(_ref) {
 
   if (files.length && !html) {
     html = files.map(function (file) {
-      return "<img src=\"".concat(Object(external_this_wp_blob_["createBlobURL"])(file), "\">");
+      return "<img src=\"".concat(Object(external_this_wp_blob_["createBlobURL"])(file), "\" alt=\"\">");
     }).join('');
     plainText = '';
   }
@@ -34389,7 +34389,7 @@ function filePasteHandler(files) {
     var type = _ref.type;
     return /^image\/(?:jpe?g|png|gif)$/.test(type);
   }).map(function (file) {
-    return "<img src=\"".concat(Object(external_this_wp_blob_["createBlobURL"])(file), "\">");
+    return "<img src=\"".concat(Object(external_this_wp_blob_["createBlobURL"])(file), "\" alt=\"\">");
   }).join('');
 }
 

@@ -316,7 +316,7 @@ class acf_field_google_map extends acf_field {
 	   	$url = add_query_arg($api, 'https://maps.googleapis.com/maps/api/js');
 	   	
 ?>
-<script type="text/javascript">
+<script >
 	if( acf ) acf.fields.google_map.url = '<?php echo $url; ?>';
 </script>
 <?php

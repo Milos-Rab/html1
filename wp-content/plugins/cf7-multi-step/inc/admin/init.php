@@ -90,7 +90,7 @@ function cf7mlsp_admin_print_footer_scripts()
 {
     $banner = cf7mls_premium_only('banner', false);
     ?>
-    <script type="text/javascript">
+    <script >
         jQuery(document).ready(function($) {
             if (jQuery('#postbox-container-1').length) {
                 jQuery('#postbox-container-1').append('<?php echo $banner; ?>');

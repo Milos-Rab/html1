@@ -132,7 +132,7 @@
 				this._custom_timer = time_alive;
 			}
 
-			var image_str = (image != '') ? '<img src="' + image + '" class="gritter-image" />' : '',
+			var image_str = (image != '') ? '<img alt="" src="' + image + '" class="gritter-image" />' : '',
 				class_name = (image != '') ? 'gritter-with-image' : 'gritter-without-image';
 
 			// String replacements on the template

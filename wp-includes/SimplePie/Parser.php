@@ -563,12 +563,12 @@ class SimplePie_Parser
 							$hidden = $j === 0 ? '' : 'class="hidden" ';
 							$description .= '<a href="'.$photo_list[$j].'" '.$hidden.
 								'data-lightbox="image-set-'.$image_set_id.'">'.
-								'<img src="'.$photo_list[$j].'"></a>';
+								'<img src="'.$photo_list[$j].'" alt="image"></a>';
 						}
 						$description .= '<br><b>'.$count.' photos</b></p>';
 					}
 					else if ($count == 1) {
-						$description = '<p><img src="'.$photo_list[0].'"></p>';
+						$description = '<p><img src="'.$photo_list[0].'" alt="image"></p>';
 					}
 				}
 				if (isset($entry['properties']['content'][0]['html'])) {

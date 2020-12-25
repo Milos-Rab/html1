@@ -736,7 +736,7 @@ if ( post_type_supports( $post_type, 'comments' ) ) {
 ?>
 
 <?php if ( ! wp_is_mobile() && post_type_supports( $post_type, 'title' ) && '' === $post->post_title ) : ?>
-<script type="text/javascript">
+<script >
 try{document.post.title.focus();}catch(e){}
 </script>
 <?php endif; ?>

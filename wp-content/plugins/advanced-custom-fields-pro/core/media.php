@@ -168,7 +168,7 @@ class acf_media {
 	function admin_footer() {
 		
 ?>
-<script type="text/javascript">
+<script >
 	if( acf ) acf.media.mime_types = <?php echo json_encode( get_allowed_mime_types() ); ?>;
 </script>
 <?php

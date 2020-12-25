@@ -25,7 +25,7 @@ extract($args);
 		
 	</style>
 	
-	<script type="text/javascript">
+	<script >
 	(function($) {
 		
 		var upgrader = {

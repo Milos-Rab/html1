@@ -703,8 +703,8 @@ if ( ! class_exists( 'EWWW_Flag' ) ) {
 				'ewwwflagscript',
 				'ewww_vars',
 				array(
-					'optimizing' => '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . " <img src='$loading_image' /></p>",
-					'restoring'  => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . " <img src='$loading_image' /></p>",
+					'optimizing' => '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . " <img src='$loading_image' alt="" /></p>",
+					'restoring'  => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . " <img src='$loading_image' alt="" /></p>",
 				)
 			);
 		}

@@ -199,7 +199,7 @@ function dismissed_updates() {
 		$show_text = esc_js( __( 'Show hidden updates' ) );
 		$hide_text = esc_js( __( 'Hide hidden updates' ) );
 		?>
-	<script type="text/javascript">
+	<script >
 		jQuery(function( $ ) {
 			$( 'dismissed-updates' ).show();
 			$( '#show-dismissed' ).toggle( function() { $( this ).text( '<?php echo $hide_text; ?>' ).attr( 'aria-expanded', 'true' ); }, function() { $( this ).text( '<?php echo $show_text; ?>' ).attr( 'aria-expanded', 'false' ); } );
@@ -869,7 +869,7 @@ function do_core_upgrade( $reinstall = false ) {
 	);
 	?>
 	</div>
-	<script type="text/javascript">
+	<script >
 	window.location = '<?php echo self_admin_url( 'about.php?updated' ); ?>';
 	</script>
 	<?php

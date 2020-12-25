@@ -266,7 +266,7 @@ class acf_input {
 		
 		
 ?>
-<script type="text/javascript">
+<script >
 var acf = acf || null;
 if( acf ) {
 	
@@ -281,7 +281,7 @@ if( acf ) {
 do_action('acf/input/admin_footer');
 	
 ?>
-<script type="text/javascript">
+<script >
 	if( acf ) acf.do_action('prepare');
 </script>
 <?php

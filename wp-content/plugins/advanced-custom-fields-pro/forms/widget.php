@@ -144,7 +144,7 @@ class acf_form_widget {
 			// jQuery selector looks odd, but is necessary due to WP adding an incremental number into the ID
 			// - not possible to find number via PHP parameters
 			if( $widget->updated ): ?>
-			<script type="text/javascript">
+			<script >
 			(function($) {
 				
 				acf.do_action('append', $('[id^="widget"][id$="<?php echo $widget->id; ?>"]') );
@@ -239,7 +239,7 @@ class acf_form_widget {
 			
 			// add missing WP JS to remove spinning
 			// also set state to 'saved' which disables the save button
-			$message .= '<script type="text/javascript">';
+			$message .= '<script >';
 			$message .= '(function($) {';
 			$message .= '$(".customize-control.previewer-loading").removeClass("previewer-loading"); ';
 			$message .= 'wp.customize.state("saved").set( true ); ';
@@ -594,7 +594,7 @@ class acf_form_widget {
 	function admin_footer() {
 		
 ?>
-<script type="text/javascript">
+<script >
 (function($) {
 	
 	 acf.add_filter('get_fields', function( $fields ){

@@ -209,7 +209,7 @@ function ewww_image_optimizer_tool_script( $hook ) {
 			'remove_failed'     => esc_html__( 'Could not remove image from table.', 'ewww-image-optimizer' ),
 			'invalid_response'  => esc_html__( 'Received an invalid response from your website, please check for errors in the Developer Tools console of your browser.', 'ewww-image-optimizer' ),
 			'original_restored' => esc_html__( 'Original Restored', 'ewww-image-optimizer' ),
-			'restoring'         => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>",
+			'restoring'         => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' alt="" /></p>",
 			'finished'          => '<p><b>' . esc_html__( 'Finished', 'ewww-image-optimizer' ) . '</b></p>',
 			'stage1'            => esc_html__( 'Stage 1:', 'ewww-image-optimizer' ),
 			'stage2'            => esc_html__( 'Stage 2:', 'ewww-image-optimizer' ),
@@ -311,7 +311,7 @@ function ewww_image_optimizer_bulk_head_output() {
 	$delay         = ewww_image_optimizer_get_option( 'ewww_image_optimizer_delay' ) ? (int) ewww_image_optimizer_get_option( 'ewww_image_optimizer_delay' ) : 0;
 	?>
 		<div id="ewww-bulk-loading">
-			<p id="ewww-loading" class="ewww-bulk-info" style="display:none"><?php esc_html_e( 'Importing', 'ewww-image-optimizer' ); ?>&nbsp;<img src='<?php echo esc_url( $loading_image ); ?>' /></p>
+			<p id="ewww-loading" class="ewww-bulk-info" style="display:none"><?php esc_html_e( 'Importing', 'ewww-image-optimizer' ); ?>&nbsp;<img src='<?php echo esc_url( $loading_image ); ?>' alt=""/></p>
 		</div>
 		<div id="ewww-bulk-progressbar"></div>
 		<div id="ewww-bulk-timer" style="float:right;"></div>
@@ -718,7 +718,7 @@ function ewww_image_optimizer_bulk_script( $hook ) {
 			/* translators: %d: number of images */
 			'count_string'          => sprintf( esc_html__( '%d images', 'ewww-image-optimizer' ), $image_count ),
 			'scan_fail'             => esc_html__( 'Operation timed out, you may need to increase the max_execution_time or memory_limit for PHP', 'ewww-image-optimizer' ),
-			'scan_incomplete'       => esc_html__( 'Scan did not complete, will try again', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' />",
+			'scan_incomplete'       => esc_html__( 'Scan did not complete, will try again', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' alt="" />",
 			'operation_stopped'     => esc_html__( 'Optimization stopped, reload page to resume.', 'ewww-image-optimizer' ),
 			'operation_interrupted' => esc_html__( 'Operation Interrupted', 'ewww-image-optimizer' ),
 			'temporary_failure'     => esc_html__( 'Temporary failure, attempts remaining:', 'ewww-image-optimizer' ),
@@ -730,7 +730,7 @@ function ewww_image_optimizer_bulk_script( $hook ) {
 			'last_image_header'     => esc_html__( 'Last Image Optimized', 'ewww-image-optimizer' ),
 			'time_remaining'        => esc_html__( 'remaining', 'ewww-image-optimizer' ),
 			'original_restored'     => esc_html__( 'Original Restored', 'ewww-image-optimizer' ),
-			'restoring'             => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>",
+			'restoring'             => '<p>' . esc_html__( 'Restoring', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' alt="" /></p>",
 			'bulk_fail_more'        => '<a href="https://docs.ewww.io/article/39-bulk-optimizer-failure" target="_blank" data-beacon-article="596f84f72c7d3a73488b3ca7">' . esc_html__( 'more...', 'ewww-image-optimizer' ) . '</a>',
 		)
 	);
@@ -1535,7 +1535,7 @@ function ewww_image_optimizer_media_scan( $hook = '' ) {
 			wp_json_encode(
 				array(
 					/* translators: %s: number of images */
-					'remaining'      => sprintf( esc_html__( 'Stage 1, %s items left to scan.', 'ewww-image-optimizer' ), number_format_i18n( $remaining ) ) . "&nbsp;<img src='$loading_image' />",
+					'remaining'      => sprintf( esc_html__( 'Stage 1, %s items left to scan.', 'ewww-image-optimizer' ), number_format_i18n( $remaining ) ) . "&nbsp;<img src='$loading_image'  alt=""/>",
 					'notice'         => $notice,
 					'bad_attachment' => $bad_attachment,
 					'tiny_skip'      => $tiny_notice,
@@ -1547,7 +1547,7 @@ function ewww_image_optimizer_media_scan( $hook = '' ) {
 		die(
 			wp_json_encode(
 				array(
-					'remaining'      => esc_html__( 'Stage 2, please wait.', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' />",
+					'remaining'      => esc_html__( 'Stage 2, please wait.', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' alt="" />",
 					'notice'         => $notice,
 					'bad_attachment' => $bad_attachment,
 					'tiny_skip'      => $tiny_notice,
@@ -1599,9 +1599,9 @@ function ewww_image_optimizer_bulk_initialize() {
 	$loading_image = plugins_url( '/images/wpspin.gif', __FILE__ );
 	// Let the user know that we are beginning.
 	if ( $file ) {
-		$output['results'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . " <b>$file</b>&nbsp;<img src='$loading_image' /></p>";
+		$output['results'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . " <b>$file</b>&nbsp;<img src='$loading_image'  alt=""/></p>";
 	} else {
-		$output['results'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>";
+		$output['results'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image'  alt=""/></p>";
 	}
 	$output['start_time'] = time();
 	ewwwio_memory( __FUNCTION__ );
@@ -2038,9 +2038,9 @@ function ewww_image_optimizer_bulk_loop( $hook = '', $delay = 0 ) {
 		// Generate the WP spinner image for display.
 		$loading_image = plugins_url( '/images/wpspin.gif', __FILE__ );
 		if ( $next_file ) {
-			$output['next_file'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . " <b>$next_file</b>&nbsp;<img src='$loading_image' /></p>";
+			$output['next_file'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . " <b>$next_file</b>&nbsp;<img src='$loading_image'  alt=""/></p>";
 		} else {
-			$output['next_file'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image' /></p>";
+			$output['next_file'] = '<p>' . esc_html__( 'Optimizing', 'ewww-image-optimizer' ) . "&nbsp;<img src='$loading_image'  alt=""/></p>";
 		}
 	} else {
 		$output['done'] = 1;

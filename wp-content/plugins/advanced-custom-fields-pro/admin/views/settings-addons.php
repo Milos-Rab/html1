@@ -30,7 +30,7 @@ $json = acf_extract_var( $args, 'json');
 					
 					<div class="thumbnail">
 						<a target="_blank" href="<?php echo $addon['url']; ?>">
-							<img src="<?php echo $addon['thumbnail']; ?>" />
+							<img src="<?php echo $addon['thumbnail']; ?>" alt="">
 						</a>
 					</div>
 					<div class="inner">

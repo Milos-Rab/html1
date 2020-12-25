@@ -140,7 +140,7 @@ class acf_form_attachment {
 		
 		
 ?>
-<script type="text/javascript">
+<script >
 	
 // WP saves attachment on any input change, so unload is not needed
 acf.unload.active = 0;

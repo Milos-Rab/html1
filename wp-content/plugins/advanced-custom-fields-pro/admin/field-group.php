@@ -395,7 +395,7 @@ class acf_admin_field_group {
 		$status = $field_group['active'] ? __("Active",'acf') : __("Inactive",'acf');
 		
 ?>
-<script type="text/javascript">
+<script >
 (function($) {
 	
 	// modify status

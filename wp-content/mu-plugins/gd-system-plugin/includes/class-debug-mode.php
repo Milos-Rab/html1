@@ -497,7 +497,7 @@ final class Debug_Mode {
 		}
 
 		?>
-		<script type="text/javascript">
+		<script >
 			jQuery( document ).on( "keyup", function( e ) {
 				if ( 27 == e.keyCode ) {
 					jQuery( "body" ).toggleClass( "wpaas-debug-mode" );

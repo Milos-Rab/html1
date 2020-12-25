@@ -180,7 +180,7 @@ class acf_form_comment {
 					<h3 class="hndle"><?php echo $field_group['title']; ?></h3>
 					<div class="inside">
 						<?php acf_render_fields( $post_id, $fields, 'div', $field_group['instruction_placement'] ); ?>
-						<script type="text/javascript">
+						<script >
 						if( typeof acf !== 'undefined' ) {
 								
 							acf.postbox.render(<?php echo json_encode($o); ?>);
@@ -310,7 +310,7 @@ class acf_form_comment {
 	function admin_footer() {
 		
 ?>
-<script type="text/javascript">
+<script >
 (function($) {
 	
 	// vars

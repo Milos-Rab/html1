@@ -128,7 +128,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				</p>
 			</div>
 			<div class="column about__image aligncenter is-edge-to-edge">
-				<img src="data:image/svg+xml,<?php echo rawurlencode( '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 440 291"><circle cx="294.5" cy="145.5" r="145.5" fill="#E5D1D1"/><circle cx="106.5" cy="106.5" r="106.5" fill="#EEEADD"/></svg>' ); ?>" style="max-width:25em" alt="" />
+				<img alt="" src="data:image/svg+xml,<?php echo rawurlencode( '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 440 291"><circle cx="294.5" cy="145.5" r="145.5" fill="#E5D1D1"/><circle cx="106.5" cy="106.5" r="106.5" fill="#EEEADD"/></svg>' ); ?>" style="max-width:25em" alt="" />
 			</div>
 		</div>
 

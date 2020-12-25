@@ -76,7 +76,7 @@ $preg_replace = array(
 			resize: none;
 		}
 	</style>
-	<script type="text/javascript">
+	<script >
 	(function($){
 		
 		var i = 0;

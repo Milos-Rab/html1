@@ -248,7 +248,7 @@ class acf_form_taxonomy {
 	function admin_footer() {
 	
 ?>
-<script type="text/javascript">
+<script >
 (function($) {
 	
 	// vars

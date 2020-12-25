@@ -854,7 +854,7 @@ var StockPhotoPreview = wp.media.view.Frame.extend({
 		});
 
 		this.attachmentPreview.$el.html(
-				'<img src="' + this.model.get( 'sizes' ).preview.url + '">' +
+				'<img src="' + this.model.get( 'sizes' ).preview.url + '" alt="">' +
 				'<a href="#" class="license-details">' + wpaas_stock_photos.license_text + '</a>'
 		);
 

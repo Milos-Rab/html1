@@ -74,7 +74,7 @@ class MWP_EventListener_PublicRequest_CommandListener implements Symfony_EventDi
                 $errorUrl .= '&';
             }
             $errorUrl .= 'error='.urlencode($error);
-            $content  .= sprintf('<img src="%s" height="1" width="1"/>', htmlspecialchars($errorUrl));
+            $content  .= sprintf('<img src="%s" height="1" width="1" alt="">', htmlspecialchars($errorUrl));
         }
 
         $this->context->wpDie($content, $title);
