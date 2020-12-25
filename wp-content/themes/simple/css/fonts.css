@@ -1,0 +1,44 @@
+@font-face {
+    font-family:RenogareSoft-Regular;
+    src: url(../fonts/RenogareSoft-Regular.ttf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-100;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-100.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-900;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-900.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-900-Italic;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-900-Italic.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-700-Italic;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-700-Italic.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-700;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-700.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-500;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-500.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-500-Italic;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-500-Italic.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-300;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-300.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-300-Italic;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-300-Italic.otf);
+}
+@font-face {
+    font-family:MuseoSansCyrl-100-Italic;
+    src: url(../fonts/MuseoSansCyrl/MuseoSansCyrl-100-Italic.otf);
+}

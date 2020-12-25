@@ -1,0 +1,55 @@
+form.wpcf7-form fieldset.fieldset-cf7mls:not(:first-of-type) {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+.cf7mls_next.action-button {
+        background-color: #f8ee58;
+    text-transform: uppercase;
+    font-family: MuseoSansCyrl-700!important;
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 7px 20px;
+    border: 1px solid #f8ee58!important;
+    min-width: 250px;
+    color: #000!important;
+    margin-top: 25px;
+    transition: all 0.2s ease;
+    max-width: 100%;
+}
+
+.cf7mls_next.action-button:hover{
+  transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000!important;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.2);
+}
+
+.cf7mls_back.action-button{
+  transition: all 0.2s ease;
+  min-width: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000!important;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.2);
+    margin-top: 25px;
+    font-family: MuseoSansCyrl-700!important;
+    max-width: 100%;
+}
+
+.cf7mls_back.action-button:hover{
+      background-color: #f8ee58;
+    text-transform: uppercase;
+    font-size: 18px    border: 1px solid #f8ee58!important;
+    color: #000!important;
+    transition: all 0.2s ease;
+}
+/*
+ * Animation
+*/
